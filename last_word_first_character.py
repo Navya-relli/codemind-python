@@ -1,6 +1,4 @@
-n=input()
-s=n.split()
-l=len(s)
-for i in s[l-1]:
-    print(i)
-    break
+l=list(map(str,input().split()))
+n=len(l)
+m=l[n-1]
+print(m[0])
