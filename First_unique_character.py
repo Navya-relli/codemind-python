@@ -1,7 +1,8 @@
-n=input()
-for i in n:
-    if n.count(i)==1:
+s=input()
+for i in s:
+    c=s.count(i)
+    if c==1:
         print(i)
         break
 else:
-    print(-1)
+    print('-1')
