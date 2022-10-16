@@ -1,6 +1,6 @@
-n=input()
-s=n.split()
-sm=0
-la=0
-for i in s:
-    print(abs(ord(min(i))-ord(max(i))),end=" ")
+x=list(map(str,input().split()))
+for i in x:
+    s,m=0,0
+    s+=ord(max(i))
+    m+=ord(min(i))
+    print(s-m,end=" ")
