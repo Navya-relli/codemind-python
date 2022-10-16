@@ -1,11 +1,9 @@
-n=input()
-s=n.split()
-l=len(s)
-k=s[l-1]
-p=k.lower()
-for i in p:
-    if p.count(i)>=2:
-        print(min(p))
-        break
+s=list(map(str,input().split()))
+a=len(s)
+s=s[a-1]
+n=min(s)
+m=n.lower()
+if s.count(m)!=0:
+    print(m)
 else:
-    print(min(k))
+    print(n)
