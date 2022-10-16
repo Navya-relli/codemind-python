@@ -1,11 +1,14 @@
-n=input()
-e=input()
+s=input()
+x=input()
+c=0
 p=0
-for i in str(n):
-    if i==e:
-        print('True')
-        print(p)
+for i in range(len(s)):
+    if x==s[i]:
+        c=1
+        p=i
         break
-    p=p+1
+if c==1:
+    print("True")
+    print(p)
 else:
-    print('False')
+    print("False")
