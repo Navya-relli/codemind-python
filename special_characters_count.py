@@ -1,10 +1,14 @@
-n=input()
-s=n.upper()
-c2=0
-c1=0
-for i in s:
-    if(ord(i)>=65 and ord(i)<=90) or ord(i)==32:
-        c1=c1+1
+x=input()
+c=0
+for i in x:
+    if i.isdigit():
+        pass
+    elif i.islower():
+        pass
+    elif i.isupper():
+        pass
+    elif i==' ':
+        pass
     else:
-        c2=c2+1
-print(c2)
+        c+=1
+print(c)
