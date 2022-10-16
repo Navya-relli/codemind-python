@@ -1,9 +1,7 @@
-n=input()
-n1=n.lower()
-s=''
-for i in n1:
-    if i not in s and ord(i)!=32:
-        s=s+i
-k=list(s)
-k.sort()
-print(len(k))
+z=input().lower()
+s=set(z)
+c=0
+for i in s:
+    if i>='a' and i<='z':
+        c+=1
+print(c)
