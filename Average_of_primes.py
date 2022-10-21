@@ -1,19 +1,14 @@
 def prime(n):
     if n==1:
-        return False
-    else:
-        for i in range(2,int(n**0.5)+1):
-            if n%i==0:
-                return False
-        else:
-            return True
-n=int(input())
-s=0
-c=0
-k=list(map(int,input().split()))
-for i in range(n):
-    if prime(k[i]):
-        s=s+k[i]
-        c=c+1
-ave=s/c
-print(format(ave,".2f"))
+        return 0
+    for i in range(2,(n//2)+1):
+        if n%i==0:
+            return 0
+    return 1
+x=int(input())
+l=list(map(int,input().split()))
+b=[]
+for i in l:
+    if prime(i):
+        b.append(i)
+print(format(sum(b)/len(b),".2f"))
