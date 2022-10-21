@@ -1,17 +1,16 @@
 def prime(n):
     if n==1:
-        return False
-    else:
-        for i in range(2,int(n**0.5)+1):
-            if n%i==0:
-                return False
-        else:
-            return True
-n=int(input())
-b=list(map(int,input().split()))
-k=int(input())
+        return 0
+    for i in range(2,int(n**0.5)+1):
+        if n%i==0:
+            return 0
+    return 1
+x=int(input())
+l=list(map(int,input().split()))
 c=0
-for i in range(n):
-    if prime(b[i]) and b[i]<=k:
-        c=c+1
+a=int(input())
+for i in l:
+    if i<=a:
+        if prime(i):
+            c+=1
 print(c)
