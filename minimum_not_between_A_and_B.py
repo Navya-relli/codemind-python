@@ -1,14 +1,13 @@
-n=int(input())
-a=list(map(int,input().split()))
-b,c=map(int,input().split())
-s=[]
-for i in range(b,c+1):
-    s.append(i)
-d=[]
-for j in a:
-    if j not in s:
-        d.append(j)
-if len(d)>0:
-    print(min(d))
+x=int(input())
+l=list(map(int,input().split()))
+a,b=map(int,input().split())
+m=[]
+for i in l:
+    if i>=a and i<=b:
+        pass
+    else:
+        m.append(i)
+if m==[]:
+    print(-1)
 else:
-    print('-1')
+    print(min(m))
