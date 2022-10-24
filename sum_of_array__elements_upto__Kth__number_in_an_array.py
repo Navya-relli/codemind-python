@@ -1,10 +1,8 @@
 n=int(input())
 a=list(map(int,input().split()))
-b=int(input())
+k=int(input())
 s=0
 for i in range(n):
-    if a[i]>b:
-        break
-    else:
+    if a[i]<=k:
         s=s+a[i]
 print(s)
