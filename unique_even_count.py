@@ -1,9 +1,8 @@
-n=list(input())
-a=list(map(int,input().split()))
-k=set(a)
-d=list(k)
+n=int(input())
+l=list(map(int,input().split()))
+l=set(l)
 s=0
-for i in d:
+for i in l:
     if i%2==0:
-        s=s+1
+        s+=1
 print(s)
