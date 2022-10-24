@@ -1,8 +1,8 @@
 n=int(input())
 a=list(map(int,input().split()))
-s=[]
+if n%2==0:
+    print(*a)
 if n%2!=0:
-    a.append(0)
-    print(*a)
-else:
-    print(*a)
+    for i in a:
+        print(i,end=' ')
+    print('0')
