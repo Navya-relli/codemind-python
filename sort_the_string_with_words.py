@@ -1,3 +1,2 @@
-s=input().lower()
-s=s.split(' ')
-print(*sorted(s))
+l=list(map(str,input().split()))
+print(*sorted(l))
