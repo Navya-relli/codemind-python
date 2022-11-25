@@ -6,6 +6,6 @@ for j in range(n):
         if j==0 or j==(n-1):
             s=s+m[i]
         else:
-            if i==0 or i==(len(m)-1):
-                s=s+m[i]
+             if i==0 or i==(len(m)-1):
+                 s=s+m[i]
 print(s)
