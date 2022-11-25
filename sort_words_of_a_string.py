@@ -1,5 +1,5 @@
 x=list(map(str,input().split()))
-a='~!@#$%^&*()_-?.,<>{}[]'
+a='~!@#$%^&*()_+?.,<>{}[]'
 m=[]
 for i in x:
     for j in i:
@@ -13,5 +13,5 @@ for i in x:
         else:
             print(m[k],end="")
             k+=1
-    print(end=" ")
     m.clear()
+    print(end=" ")
