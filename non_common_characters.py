@@ -11,7 +11,7 @@ for i in l:
     if i not in s:
         m.append(i)
 for i in s:
-    if i not in l:
+    if  i not in l:
         m.append(i)
 m=set(m)
 print(''.join(sorted(m)))
